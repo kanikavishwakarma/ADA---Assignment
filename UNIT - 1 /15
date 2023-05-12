@@ -1,0 +1,26 @@
+15. Create a flowchart for a merge sort algorithm.
+
+Start
+|
+V
+If length of array is less than or equal to 1
+|
+|---Yes: Return array
+|
+V
+Set middle_index = length of array / 2
+|
+V
+Set left_half = merge sort on array[0:middle_index]
+|
+V
+Set right_half = merge sort on array[middle_index:length of array]
+|
+V
+Set sorted_array = merge left_half and right_half
+|
+V
+Return sorted_array
+|
+V
+End
