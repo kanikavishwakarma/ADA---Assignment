@@ -1,0 +1,31 @@
+14.  Create a flowchart for an insertion sort algorithm.
+
+Start
+|
+V
+For i = 1 to length of array - 1
+|
+V
+Set current_value = value at index i
+|
+V
+Set j = i - 1
+|
+V
+While j >= 0 and value at index j is greater than current_value
+|
+|---Yes: Shift the value at index j to the right by 1 position
+|
+|---Decrement j by 1
+|
+V
+End While
+|
+V
+Insert current_value at index j+1
+|
+V
+End For
+|
+V
+End
