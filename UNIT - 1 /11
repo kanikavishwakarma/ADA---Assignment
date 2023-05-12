@@ -1,0 +1,30 @@
+11.  Create a flowchart for a binary search algorithm.
+
+Start
+|
+V
+Set low = 0 and high = length of array - 1
+|
+V
+While low <= high
+|
+V
+Set mid = (low + high) // 2
+|
+V
+If the value at the mid index is equal to the target value
+|
+|---Yes: Return mid
+|
+V
+If the value at the mid index is less than the target value
+|
+|---Yes: Set low = mid + 1
+|
+|---No: Set high = mid - 1
+|
+V
+Return -1 (if target value not found in array)
+|
+V
+End
