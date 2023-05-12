@@ -1,0 +1,26 @@
+//Create a flowchart for a hash table data structure using linear probing collision resolution.
+
+START
+
+1. Create a hash table with an array of buckets
+2. For each element in the input list:
+     a. Compute the hash value of the element's key
+     b. Find the corresponding bucket in the hash table
+     c. If the bucket is empty, insert the element into the bucket
+     d. If the bucket is not empty, use linear probing to find the next available bucket
+          i. Compute the new hash value based on the probe sequence
+          ii. If the new bucket is empty, insert the element into the bucket
+          iii. If the new bucket is not empty and has a different key, continue probing
+               a. Compute the next hash value based on the probe sequence
+          iv. If the new bucket is not empty and has the same key, update its value
+3. Search for an element in the hash table:
+     a. Compute the hash value of the element's key
+     b. Find the corresponding bucket in the hash table
+     c. If the bucket is empty, the element is not in the hash table
+     d. If the bucket is not empty:
+          i. If the bucket has the element's key, return its value
+          ii. If the bucket does not have the element's key, use linear probing to search the next available bucket
+               a. Compute the next hash value based on the probe sequence
+          iii. Repeat steps i and ii until the element is found or an empty bucket is encountered
+
+END
