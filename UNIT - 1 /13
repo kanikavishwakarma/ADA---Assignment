@@ -1,0 +1,27 @@
+13. Start
+|
+V
+For i = 0 to length of array - 2
+|
+V
+Set min_index = i
+|
+V
+For j = i+1 to length of array - 1
+|
+V
+If the value at index j is less than the value at index min_index
+|
+|---Yes: Set min_index = j
+|
+V
+End For
+|
+V
+Swap the values at index i and min_index
+|
+V
+End For
+|
+V
+End
