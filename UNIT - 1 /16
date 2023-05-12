@@ -1,0 +1,52 @@
+16. Create a flowchart for a quick sort algorithm.
+
+Start
+|
+V
+If length of array is less than or equal to 1
+|
+|---Yes: Return array
+|
+V
+Set pivot = choose pivot element from array
+|
+V
+Set left_index = 0
+|
+V
+Set right_index = length of array - 1
+|
+V
+While left_index <= right_index
+|
+|---While value at left_index is less than pivot
+|
+|       |---Yes: Increment left_index
+|
+|       |---No: Break loop
+|
+|---While value at right_index is greater than pivot
+|
+|       |---Yes: Decrement right_index
+|
+|       |---No: Break loop
+|
+|---If left_index is less than or equal to right_index
+|
+|       |---Swap value at left_index with value at right_index
+|
+|       |---Increment left_index
+|
+|       |---Decrement right_index
+|
+V
+Set left_subarray = quick sort on array[0: left_index]
+|
+V
+Set right_subarray = quick sort on array[right_index + 1: length of array]
+|
+V
+Return concatenation of left_subarray, pivot, and right_subarray
+|
+V
+End
