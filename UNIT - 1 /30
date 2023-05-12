@@ -1,0 +1,18 @@
+//Create a flowchart for a heap data structure and use it to sort an array of integers.
+
+START
+
+1. Build a max-heap from the input array
+     a. Start from the middle of the array and work backwards
+     b. For each element, swap it with its largest child if the child is greater
+     c. Continue this process until the element is in its correct position
+2. Sort the input array in ascending order
+     a. While the heap is not empty:
+          i. Remove the root element (which is the largest element in the heap)
+          ii. Swap it with the last element in the heap
+          iii. Reduce the heap size by 1
+          iv. Restore the heap property by sifting down the new root element
+          v. Add the removed element to the end of the sorted array
+3. Return the sorted array
+
+END
