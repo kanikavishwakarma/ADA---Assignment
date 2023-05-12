@@ -1,0 +1,32 @@
+
+12.  Create a flowchart for a bubble sort algorithm.
+
+Start
+|
+V
+Set swapped = True
+|
+V
+While swapped is True
+|
+V
+Set swapped = False
+|
+V
+For i = 0 to length of array - 2
+|
+V
+If the value at index i is greater than the value at index i+1
+|
+|---Yes: Swap the values at index i and i+1
+|
+|---Set swapped = True
+|
+V
+End For
+|
+V
+End While
+|
+V
+End
