@@ -1,0 +1,24 @@
+17. Create a flowchart for a linear search algorithm.
+
+Start
+|
+V
+Set target value to search for
+|
+V
+Set index counter to 0
+|
+V
+While index counter is less than length of array
+|
+|---If value at index counter equals target value
+|
+|       |---Yes: Return index counter
+|
+|       |---No: Increment index counter
+|
+V
+Return -1 (indicating that the target value was not found)
+|
+V
+End
