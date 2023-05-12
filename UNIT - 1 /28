@@ -1,0 +1,21 @@
+//Create a flowchart for a hash table data structure using separate chaining collision resolution
+
+START
+
+1. Create a hash table with an array of buckets
+2. For each element in the input list:
+     a. Compute the hash value of the element's key
+     b. Find the corresponding bucket in the hash table
+     c. If the bucket is empty, create a new linked list node with the element and add it to the bucket
+     d. If the bucket is not empty, search the linked list for an existing node with the same key
+          i. If a node with the same key exists, update its value
+          ii. If a node with the same key does not exist, create a new linked list node with the element and add it to the end of the list
+3. Search for an element in the hash table:
+     a. Compute the hash value of the element's key
+     b. Find the corresponding bucket in the hash table
+     c. If the bucket is empty, the element is not in the hash table
+     d. If the bucket is not empty, search the linked list for a node with the same key
+          i. If a node with the same key exists, return its value
+          ii. If a node with the same key does not exist, the element is not in the hash table
+
+END
